@@ -3,7 +3,7 @@
         name: "share",
         init: function(options) {
             //create shortcuts
-            cobalt.shareItem = this.shareItem.bind(this);
+            cobalt.share = this.shareItem.bind(this);
             if (options) {
                 cobalt.log("share.js init called with option ", options);
                 this.config(options);
@@ -37,3 +37,4 @@
     };
     cobalt.plugins.register(plugin);
 })(cobalt || {});
+
