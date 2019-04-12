@@ -1,16 +1,9 @@
 (function(cobalt) {
     var plugin = {
         name: "share",
-        init: function(options) {
+        init: function() {
             //create shortcuts
             cobalt.share = this.shareItem.bind(this);
-            if (options) {
-                cobalt.log("share.js init called with option ", options);
-                this.config(options);
-            }
-        },
-        config: function(settings) {
-            cobalt.log("share.js config called with settings ", settings);
         },
         shareItem: function(data, callback) {
             this.send("share", data, function(data) {
