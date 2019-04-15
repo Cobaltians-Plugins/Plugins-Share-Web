@@ -1,5 +1,6 @@
 (function(cobalt) {
   var plugin = {
+    name: 'CobaltSharePlugin',
     classes: {
       ios: 'CobaltSharePlugin',
       android: 'io.kristal.shareplugin.SharePlugin'
